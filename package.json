@@ -1,0 +1,23 @@
+{
+  "name": "messenger-backend",
+  "version": "1.0.0",
+  "description": "Backend for messenger app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.0",
+    "bcrypt": "^5.1.0",
+    "mysql2": "^3.2.0",
+    "socket.io": "^4.5.0",
+    "dotenv": "^16.0.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
