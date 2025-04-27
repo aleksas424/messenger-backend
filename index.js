@@ -42,7 +42,9 @@ const upload = multer({ storage });
 // Maršrutai
 app.use('/api/auth', authRoutes);
 app.use('/api/chats', chatRoutes);
-app.use('/api/messages', upload.single('file'), messageRoutes);
+// Laikinai pašaliname upload.single('file'), kad patikrintume
+app.use('/api/messages', messageRoutes);
+// app.use('/api/messages', upload.single('file'), messageRoutes);
 
 app.set('socketio', io);
 
